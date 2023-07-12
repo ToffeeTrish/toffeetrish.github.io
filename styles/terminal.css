@@ -1,0 +1,35 @@
+.output {
+  font-size: 1.3rem;
+  font-family: "DOS", monospace;
+  font-weight: 300;
+  line-height: 2.3rem;
+  /* border: 5px solid red; */
+  height: 80vh;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  word-break: break-word; /* Use break-word instead of break-all */
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.output::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.output::-webkit-scrollbar-thumb {
+  background-color: #88888865;
+}
+
+.output::-webkit-scrollbar-thumb:hover {
+  background-color: #55555557;
+}
+
+@media only screen and (max-width: 600px) {
+  .output {
+    height: 90vh;
+    max-height: 90vh;
+    font-size: 4vw;
+  }
+}
